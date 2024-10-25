@@ -20,7 +20,7 @@ public class Humain {
 	}
 
 
-	private void parler(String texte) {
+	protected void parler(String texte) {
 		System.out.println( "("+ getNom() +")" + " - '" + texte +"'");
 	}
 	
@@ -42,16 +42,16 @@ public class Humain {
 		}
 	}
 	
-	private int gagnerArgent(int gain) {
+	protected int gagnerArgent(int gain) {
 		return argent += gain;
 	}
 	
 	private int perdreArgent(int perte) {
-		if (argent > 0) {
-			return argent -= perte;
+		argent -= perte;
+		if (argent < 0) {
+			argent = 0;
 		}
-		return 0;
-		
+		return perte;
 	}
 	
 }
