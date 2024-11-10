@@ -50,7 +50,7 @@ public class Humain {
 		return argent += gain;
 	}
 	
-	private int perdreArgent(int perte) {
+	public int perdreArgent(int perte) {
 		argent -= perte;
 		if (argent < 0) {
 			argent = 0;

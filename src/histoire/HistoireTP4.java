@@ -18,16 +18,18 @@ public class HistoireTP4 {
 		Commerçant c = new Commerçant("Marco", "Thé", 12);
 //		c.direBonjour();
 //		c.seFaireExtorquer();
-//		c.recevoir(3);
+		c.recevoir(3);
 //		c.boire();
 		
-		Yakuza y = new Yakuza (" Yaku le Noir", "whisky", 30 , "Warsong");
+		Yakuza y = new Yakuza ("Yaku Le Noir", "whisky", 30 , "Warsong");
 //		y.direBonjour();
-//		y.extorquer(c);
+		y.extorquer(c);
 		
 		Ronin r = new Ronin("Roro", "shochu", 60);
-		r.direBonjour();
+//		r.direBonjour();
 		r.donner(c);
+		r.provoquer(y);
+		
 	}
 
 }
