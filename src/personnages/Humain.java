@@ -11,10 +11,14 @@ public class Humain {
 		this.argent = argent;
 	}
 	
-	private String getNom() {
+	protected String getNom() {
 		return nom;
 	}
 	
+	public int getArgent() {
+		return argent;
+	}
+
 	private String getBoissonFavorite() {
 		return boissonFavorite;
 	}
@@ -25,7 +29,7 @@ public class Humain {
 	}
 	
 	public  void direBonjour() {
-		parler("Bonjour ! Je m’appelle " + getNom() + " et j’aime boire du " + getBoissonFavorite());
+		parler("Bonjour ! Je m’appelle " + getNom() + " et j’aime boire du " + getBoissonFavorite()+".");
 	}
 	
 	public void boire() {
