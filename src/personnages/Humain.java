@@ -21,7 +21,7 @@ public class Humain {
 		return argent;
 	}
 
-	private String getBoissonFavorite() {
+	public String getBoissonFavorite() {
 		return boissonFavorite;
 	}
 
